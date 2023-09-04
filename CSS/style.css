@@ -1,11 +1,15 @@
 /* FUENTES */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,800&family=Poppins:wght@700&display=swap');
 
 /* RESET */
 *{
     margin: 0;
     padding: 0;
     list-style: none;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -13,33 +17,60 @@ body{
 }
 
 /* NAV */
-.barra{
-    color: black;
-    position: fixed;
-    background-color: rgba(241, 245, 6, 0.699);
-    top: 0;
-    left: 0;
-    width: 100%;
-    border: 10px solid rgba(0, 0, 12, 0.918);
-    box-sizing: border-box;
-    z-index: 100;
-    
-}
-
-.barra ul{
+.navegacion{
+    background-color: #973838;
     display: flex;
-    width: 80%;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
+    height: 85px;
+    padding: 5px 10%;       
+
+}
+.navegacion .logo_container{
+    cursor: pointer;
 }
 
-.texto_titulo span{
-    font-size: 30px;
-    font-family: 'Poppins', sans-serif;
+.navegacion .logo_container img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.navegacion .logo_container img:hover{
+    transform: scale(1.2);
+}
+
+.navegacion .barra{
+    list-style: none;
+}
+
+.navegacion .barra li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.navegacion .barra li:hover{
+    transform: scale(1.1);
+}
+
+.navegacion .barra a{
+    font-size: 700;
+    color: #ecff;
+    text-decoration: none;
+}
+
+.navegacion .barra li a:hover{
+    color: yellow;
+}
+
+.navegacion{
     
-
 }
+
+
+
+
+
 /* FIN NAV */
 
 body{
@@ -94,14 +125,14 @@ body{
 }
 
 .discografia{
+    font-size: 40px;
     margin-top: 100px;
-    background-color: #af0909;
-    width: 160px;
-    height: 30px;
     text-align: center;
+    
 }
 
 .texto_titulo p{
+    margin-top: 20px;
     font-size: 20px;
 }
 .disco {
