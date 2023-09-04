@@ -12,9 +12,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
 body{
     background-color: rgb(26, 24, 24) ;
 }
+
 
 /* NAV */
 .navegacion{
@@ -26,9 +28,12 @@ body{
     padding: 5px 10%;       
 
 }
+
+
 .navegacion .logo_container{
     cursor: pointer;
 }
+
 
 .navegacion .logo_container img{
     height: 70px;
@@ -36,22 +41,27 @@ body{
     transition: all 0.3s;
 }
 
+
 .navegacion .logo_container img:hover{
     transform: scale(1.2);
 }
 
+
 .navegacion .barra{
     list-style: none;
 }
+
 
 .navegacion .barra li{
     display: inline-block;
     padding: 0 20px;
 }
 
+
 .navegacion .barra li:hover{
     transform: scale(1.1);
 }
+
 
 .navegacion .barra a{
     font-size: 700;
@@ -59,16 +69,10 @@ body{
     text-decoration: none;
 }
 
+
 .navegacion .barra li a:hover{
     color: yellow;
 }
-
-.navegacion{
-    
-}
-
-
-
 
 
 /* FIN NAV */
@@ -97,22 +101,60 @@ body{
 
 /* HISTORIA */
 .container_titles{
-    margin-top: 100px;
+    margin-top: 50px;
+    display: flex;
+    text-align: center;
+    /* align-items: center; */
 }
+
 
 .container_titles h1{
-    font-size: 50px;
+    font-size: 20px;
+    
 }
 
+
 .media_historia h5{
-    font-size: 28px;
+    display: grid;
+    display: flex;
+    flex-direction: column;
+    
+    font-size: 22px;
 }
+
+
+.gallery{
+    min-height: 100vh;
+    width: 100%;
+    outline: 6px solid black;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.gallery-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        width: 100%;
+    }
+}
+
+
+
 /* FIN HISTORIA */
 
 /* DISCOGRAFIA */
 .body_discos{
     background-color: rgb(17, 16, 16);
 }
+
 
 .discos_padre {
     /* background-color: aqua; */
@@ -124,6 +166,7 @@ body{
 
 }
 
+
 .discografia{
     font-size: 40px;
     margin-top: 100px;
@@ -131,10 +174,12 @@ body{
     
 }
 
+
 .texto_titulo p{
     margin-top: 20px;
     font-size: 20px;
 }
+
 .disco {
     width: 48%;
     height: 100%;
@@ -143,10 +188,12 @@ body{
     text-align: center;
 }
 
+
 .disco img {
     max-width: 75%;
     height: auto;
 }
+
 /* FIN DISCOGRAFIA */
 
 /* GALERIA */
@@ -154,6 +201,7 @@ body{
 .main_galeria{
     margin-top: 100px;
 }
+
 /* FIN GALERIA */
 
 /* CONCIERTOS */
@@ -161,5 +209,6 @@ body{
 .main_conciertos{
     margin-top: 100px;
 }
+
 /* FIN CONCIERTOS */
 
