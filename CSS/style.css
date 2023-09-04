@@ -1,37 +1,114 @@
 /* FUENTES */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 /* RESET */
 *{
     margin: 0;
     padding: 0;
     list-style: none;
 }
+
+body{
+    background-color: rgb(26, 24, 24) ;
+}
+
 /* NAV */
 .barra{
-    background-color: aqua;
-    padding-left: 10px;
-    padding-top: 20px;
-    padding-right: 10px;
-    border: 10px solid blue;
+    color: black;
+    position: fixed;
+    background-color: rgba(241, 245, 6, 0.699);
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 10px solid rgba(0, 0, 12, 0.918);
     box-sizing: border-box;
+    z-index: 100;
     
 }
 
-ul li{
+.barra ul li{
     display: inline;
 }
 
 .texto_titulo span{
-    font-size: 60px;
+    font-size: 30px;
     font-family: 'Poppins', sans-serif;
     
 
 }
+/* FIN NAV */
 
+body{
+    color: #ccc;
+}
+
+/* INDEX */
+
+.luna{
+    background-color: rgba(218, 252, 29, 0.295);
+    position: absolute;
+    top: 90%;
+    font-size: 50px;
+}
+
+.titulo_inicial{
+    margin-top: 100px;
+    color: #ccc
+}
+/* FIN INDEX */
+
+/* HISTORIA */
+.container_titles{
+    margin-top: 100px;
+}
+
+.container_titles h1{
+    font-size: 50px;
+}
+
+.media_historia h5{
+    font-size: 28px;
+}
+/* FIN HISTORIA */
 
 /* DISCOGRAFIA */
 .body_discos{
     background-color: rgb(17, 16, 16);
 }
 
+.discos-canciones {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.disco {
+    width: calc(33.33% - 20px); /* Ajusta el porcentaje según tus necesidades */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.disco img {
+    max-width: 100%;
+    height: auto;
+}
+/* FIN DISCOGRAFIA */
+
+/* GALERIA */
+
+.main_galeria{
+    margin-top: 100px;
+}
+/* FIN GALERIA */
+
+/* CONCIERTOS */
+
+.main_conciertos{
+    margin-top: 100px;
+}
+/* FIN CONCIERTOS */
 
