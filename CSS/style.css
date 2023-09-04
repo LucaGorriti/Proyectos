@@ -26,8 +26,12 @@ body{
     
 }
 
-.barra ul li{
-    display: inline;
+.barra ul{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .texto_titulo span{
@@ -49,12 +53,15 @@ body{
     position: absolute;
     top: 90%;
     font-size: 50px;
+    text-align: center;
 }
 
 .titulo_inicial{
     margin-top: 100px;
     color: #ccc
 }
+
+
 /* FIN INDEX */
 
 /* HISTORIA */
@@ -76,24 +83,37 @@ body{
     background-color: rgb(17, 16, 16);
 }
 
-.discos-canciones {
+.discos_padre {
+    /* background-color: aqua; */
     margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: center;
+    /* justify-content: space-between; */
 
 }
 
+.discografia{
+    margin-top: 100px;
+    background-color: #af0909;
+    width: 160px;
+    height: 30px;
+    text-align: center;
+}
+
+.texto_titulo p{
+    font-size: 20px;
+}
 .disco {
-    width: calc(33.33% - 20px); /* Ajusta el porcentaje según tus necesidades */
-    margin: 10px;
+    width: 48%;
+    height: 100%;
+    margin-bottom: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
     text-align: center;
 }
 
 .disco img {
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
 }
 /* FIN DISCOGRAFIA */
