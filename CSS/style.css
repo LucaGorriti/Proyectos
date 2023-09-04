@@ -4,38 +4,34 @@
 *{
     margin: 0;
     padding: 0;
-}
-
-.discos-canciones{
-    background-color: black;
-    display: grid;
-    grid-auto-rows: 150px;
-    grid-template-columns: repeat(autofill, minmax(25rem, 1fr));
-    margin: 20px;
-    padding: 20px;
+    list-style: none;
 }
 /* NAV */
 .barra{
     background-color: aqua;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-right: 10px;
+    border: 10px solid blue;
+    box-sizing: border-box;
+    
 }
+
+ul li{
+    display: inline;
+}
+
 .texto_titulo span{
     font-size: 60px;
     font-family: 'Poppins', sans-serif;
+    
 
 }
 
 
-/* IMAGENES DISCOGRAFIA */
+/* DISCOGRAFIA */
 .body_discos{
     background-color: rgb(17, 16, 16);
 }
 
-.disco_1 :nth-child(1){
-   grid-row-start: span 3;
-}
-.disco_2 :nth-child(3){
-    grid-row-start: span 2;
-}
-.disco_3{
-    grid-row-start: span 4;
-}
+
