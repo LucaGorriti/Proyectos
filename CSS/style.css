@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,800&family=Poppins:wght@700&display=swap');
 
 /* RESET */
+
 *{
     margin: 0;
     padding: 0;
@@ -19,7 +20,7 @@ body{
 
 
 /* NAV */
-.navegacion{
+/* .navegacion{
     background-color: #973838;
     display: flex;
     justify-content: space-between;
@@ -90,7 +91,7 @@ body{
         display: block;
         padding: 10px 0; 
     }
-}
+} */
 
 /* FIN NAV */
 
@@ -159,14 +160,14 @@ body{
 }
 
 .container {
-    margin: 20px 0; /* Espaciado entre los contenedores */
-    padding: 10px; /* Espaciado dentro de los contenedores */
-    background-color: rgba(0, 0, 0, 0.1); /* Fondo para destacar los contenedores */
-    text-align: center; /* Centra el contenido en el contenedor */
+    margin: 20px 0;
+    padding: 10px; 
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center; 
 }
 
 .container img {
-    max-width: 100%; /* Ajusta el ancho máximo de la imagen al 100% para que sea responsive */
+    max-width: 100%;
     height: auto;
 }
 
@@ -218,6 +219,10 @@ body{
     margin-top: 100px;
     text-align: center;
     
+}
+
+.texto_titulo{
+    color: #ccc;
 }
 
 
