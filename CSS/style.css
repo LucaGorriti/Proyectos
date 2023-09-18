@@ -13,13 +13,28 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.copyright{
+    color: aqua;
+}
 
-body{
+.body_index{
     background-color: rgb(26, 24, 24) ;
 }
 
 
 /* NAV */
+
+.container-fluid img{
+    transition: all 0.3s;
+}
+
+.container-fluid img:hover{
+transform: scale(1.2);
+}
+
+
+
+
 /* .navegacion{
     background-color: #973838;
     display: flex;
@@ -95,10 +110,6 @@ body{
 
 /* FIN NAV */
 
-body{
-    color: #ccc;
-}
-
 /* INDEX */
 
 .body{
@@ -108,6 +119,7 @@ body{
 .media .video_inicio{
     height: 100%;
     margin: 10px;
+    text-align: center;
 }
 
 .luna{
@@ -119,16 +131,29 @@ body{
 }
 
 
-
 .titulo_inicial{
     margin-top: 100px;
     color: #ccc
 }
 
+.contenido{
+    color: #ccc;
+}
+
+.form_control_index{
+    color: #ccc;
+}
+
+
+
 
 /* FIN INDEX */
 
 /* HISTORIA */
+.body_historia{
+    background-color: rgb(26, 24, 24) ;
+}
+
 .container_titles{
     margin-top: 50px;
     display: flex;
@@ -160,6 +185,7 @@ body{
 }
 
 .container {
+    color: #ccc;
     margin: 20px 0;
     padding: 10px; 
     background-color: rgba(0, 0, 0, 0.1);
@@ -201,6 +227,7 @@ body{
 .body_discos{
     background-color: rgb(17, 16, 16);
 }
+
 
 
 .discos_padre {
@@ -259,6 +286,9 @@ body{
 /* FIN DISCOGRAFIA */
 
 /* GALERIA */
+.body_galeria{
+    background-color: rgb(26, 24, 24) ;
+}
 
 .main_galeria{
     margin-top: 100px;
@@ -267,6 +297,9 @@ body{
 /* FIN GALERIA */
 
 /* CONCIERTOS */
+.body_conciertos{
+    background-color: rgb(26, 24, 24) ;
+}
 
 .main_conciertos{
     margin-top: 50px;
