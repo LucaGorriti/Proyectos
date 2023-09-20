@@ -24,6 +24,33 @@
 
 /* NAV */
 
+.nav-link{
+    position: relative;
+}
+
+/* .nav-link:hover{
+    text-decoration: underline;
+
+} */
+
+.nav-link::after{
+    content:"";
+    transition: all 0.2s;
+    opacity: 0;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(5, 7, 0);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.nav-link:hover::after{
+    opacity: 1;
+}
+
+
 .container-fluid img{
     transition: all 0.3s;
 }
@@ -288,6 +315,7 @@ transform: scale(1.2);
 /* GALERIA */
 .body_galeria{
     background-color: rgb(26, 24, 24) ;
+    color: #ccc;
 }
 
 .main_galeria{
@@ -299,6 +327,7 @@ transform: scale(1.2);
 /* CONCIERTOS */
 .body_conciertos{
     background-color: rgb(26, 24, 24) ;
+    color: #ccc;
 }
 
 .main_conciertos{
