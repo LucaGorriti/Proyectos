@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,800&family=Poppins:wght@700&display=swap');
 $bg-principal:#973838;
 
-
+/* RESET */
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +11,7 @@ $bg-principal:#973838;
     font-family: 'Nunito Sans', sans-serif;
     font-family: 'Poppins', sans-serif; 
 }
+
 
 /* NAV */
 
@@ -29,7 +30,7 @@ $bg-principal:#973838;
     position: absolute;
     bottom: 0;
     left: 0;
-
+    
 }
 
 .nav-link:hover::after{
@@ -43,15 +44,10 @@ $bg-principal:#973838;
 }
 
 .container-fluid img:hover{
-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
-.body_index{
-    display: flex;
-    flex-direction: column;
-    background-color:rgb(26, 24, 24) ;
-    color: antiquewhite;
-}
+
 
 
 /* FIN NAV */
@@ -70,7 +66,7 @@ transform: scale(1.2);
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
     .video_inicio{
         border-radius: 20px;
         max-width: 100%;
@@ -97,8 +93,234 @@ transform: scale(1.2);
     
 }
 
+.button_fin{
+    border: 0;
+    background-image: linear-gradient(    150deg,
+    $bg-principal, 
+    #ec3b3b,
+    #fc1f1f
+    );
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: .3s;
+
+    span{
+        background-color: #111;
+        padding: 8px 18px;
+        border-radius: 8px;
+        transition: .3s;
+    }
+    
+}
+
+button:hover span{
+    background: none;
+    color: #111;
+}
+button:active{
+    transform: scale(0.9) ;
+}
+
+
 /* FIN INDEX */
 
+/* HISTORIA */
+
+.body_historia{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(26, 24, 24) ;
+    color: #ccc;
+}
+
+.container_titles{
+    margin-top: 50px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    /* align-items: center; */
+
+    .imagenes_audios h1{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .imagenes_audios p{
+        font-size: 15;
+        text-align: center;
+    }
+}
+
+.container {
+    color: #ccc;
+    margin: 20px 0;
+    padding: 10px; 
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center; 
+
+    .container img {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+
+.titulo-integrantes{
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    span{
+        font-size: 2rem;
+    }
+}
+
+.gallery{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+
+    .imagen{
+        width: 32%;
+        position: relative;
+        height: 250px;
+        margin-bottom: 5px;
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    
+
+    .nombre{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: #a34a4a8c;
+        width: 100%;
+
+    }
+
+}
 
 
 
+/* .gallery{
+    min-height: 100vh;
+    width: 90%;
+    position: relative;
+    outline: 6px solid black;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+
+    .gallery-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .gallery-img p{
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+} */
+
+
+
+/* FIN HISTORIA */
+
+
+/* DISCOGRAFIA */
+
+.body_discografia{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(26, 24, 24) ;
+    color: #ccc;
+}
+
+.texto_titulo {
+    h1{
+        font-size: 40px;
+        margin-top: 100px;
+        text-align: center;
+        
+    }
+    p{
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    }
+}
+
+
+
+.discos_padre {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.disco {
+    width: 48%;
+    height: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+
+    iframe{
+        margin-top: 10px;
+    }
+}
+
+.disco img {
+    max-width: 75%;
+    height: auto;
+}
+
+
+
+
+/* FIN DISCOGRAFIA */
+
+
+/* GALERIA */
+.body_galeria{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(26, 24, 24) ;
+    color: #ccc;
+}
+
+/* FIN GALERIA */
+ 
+/* CONCIERTOS */
+
+.body_conciertos{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(26, 24, 24) ;
+    color: #ccc;
+}
+/* FIN CONCIERTOS */
+  
+
+
+
+@import"queries.scss"

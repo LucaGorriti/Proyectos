@@ -1,0 +1,21 @@
+@media (max-width: 1000px){
+    .gallery{
+        width: 95%;
+    }
+}
+
+@media (max-width: 700px){
+    .gallery{
+        width: 90%;
+    }
+
+    .imagen{
+        width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .disco {
+        width: 100%;
+    }
+}

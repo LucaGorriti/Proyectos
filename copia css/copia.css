@@ -50,82 +50,6 @@
 transform: scale(1.2);
 }
 
-
-
-
-/* .navegacion{
-    background-color: #973838;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 85px;
-    padding: 5px 10%;       
-
-}
-
-
-.navegacion .logo_container{
-    cursor: pointer;
-}
-
-
-.navegacion .logo_container img{
-    height: 70px;
-    width: auto;
-    transition: all 0.3s;
-}
-
-
-.navegacion .logo_container img:hover{
-    transform: scale(1.2);
-}
-
-
-.navegacion .barra{
-    list-style: none;
-}
-
-
-.navegacion .barra li{
-    display: inline-block;
-    padding: 0 20px;
-}
-
-
-.navegacion .barra li:hover{
-    transform: scale(1.1);
-}
-
-
-.navegacion .barra a{
-    font-size: 700;
-    color: #ecff;
-    text-decoration: none;
-}
-
-
-.navegacion .barra li a:hover{
-    color: yellow;
-}
-
-@media (max-width: 937px) {
-    .navegacion {
-        justify-content: center;
-        padding: 10px 5%;
-        height: auto;
-    }
-
-    .navegacion .barra {
-        text-align: center;
-        margin-top: 10px;
-    }
-
-    .navegacion .barra li {
-        display: block;
-        padding: 10px 0; 
-    }
-} */
-
 /* FIN NAV */
 
 /* INDEX */
@@ -249,7 +173,7 @@ transform: scale(1.2);
 }
 
 
-.discografia{
+.h1{
     font-size: 40px;
     margin-top: 100px;
     text-align: center;
