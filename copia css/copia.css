@@ -17,21 +17,12 @@
     color: aqua;
 }
 
-.body_index{
-    background-color: rgb(26, 24, 24) ;
-}
-
-
 /* NAV */
 
 .nav-link{
     position: relative;
 }
 
-/* .nav-link:hover{
-    text-decoration: underline;
-
-} */
 
 .nav-link::after{
     content:"";
@@ -139,9 +130,11 @@ transform: scale(1.2);
 
 /* INDEX */
 
-.body{
+.body_index{
     display: flex;
     flex-direction: column;
+    background-color:rgb(26, 24, 24) ;
+    color: #ccc;
 }
 .media .video_inicio{
     height: 100%;
@@ -158,21 +151,9 @@ transform: scale(1.2);
 }
 
 
-.titulo_inicial{
+.index_main{
     margin-top: 100px;
-    color: #ccc
 }
-
-.contenido{
-    color: #ccc;
-}
-
-.form_control_index{
-    color: #ccc;
-}
-
-
-
 
 /* FIN INDEX */
 
