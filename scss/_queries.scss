@@ -28,7 +28,7 @@
 }
 
 
-@media (min-width: 720px){
+@media (min-width: 770px){
     
     #bandas-relacionadas{
     
@@ -84,4 +84,28 @@
         ),url(../imagenes/usted-senalemelo-cropped.jpg);
     }
     
+}
+
+@media screen and (max-width: 650px) {
+    .wrapper{
+
+        img {
+            max-width: 100%;
+            margin-right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .wrapper-historia{
+
+        .imagen-historia{
+
+            img {
+                max-width: 100%;
+                margin-right: 0;
+            }
+        }
+
+    }
 }

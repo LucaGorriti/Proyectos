@@ -50,69 +50,40 @@
     </header>
 
     <main class="main-conciertos">
-      <div class="titulos-conciertos">
-        <h1>¡Conciertos!</h1>
-        <h2>Lamentablemente ya se agotaron las entradas para el Luna Park</h2>
+      <h1>¡Conciertos!</h1>
+      <div class="wrapper">
+        <img src="../imagenes/entradas agotadas.jpg" alt="Entradas agotadas para las dos fechas en el Luna Park">
+        <div class="text-box">
+          <h2>
+            ¡Queridos seguidores!
+          </h2>
+          <p>
+            Las entradas para el Luna Park se han agotado, ¡gracias por su apoyo increíble! Pero no se preocupen, estamos planeando nuevas fechas para que todos puedan unirse a la diversión. Manténganse atentos a nuestras redes sociales y sitio web para más detalles. ¡La música continúa!
+          </p>
+        </div>
+
+
       </div>
-      <div class="media-conciertos">
-        <img src="../imagenes/entradas agotadas.jpg" alt="Imagen de las fechas de el mato en el luna park" >
-      </div>
-      
+        
       <div class="media-form">
         <div class="video-form">
-          <video src="../imagenes/Media/GIRA_SÚPER_TERROR_2023.mp4" muted autoplay loop >
-            <p>Tu navegador no soporta este video</p>
-          </video>
-          <div class="container">
+            <h3>¿Quieres enterarte de los proximos conciertos?</h3>
             <form>
-              <div class="row mb-3">
-                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                <div class="col-sm-10">
-                  <input type="email" class="form-control" id="inputEmail3">
-                </div>
+              <div class="mb-3">
+                <label for="exampleInputText1" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="exampleInputPassword1">
               </div>
-              <div class="row mb-3">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                <div class="col-sm-10">
-                  <input type="password" class="form-control" id="inputPassword3">
-                </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Correo electronico</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Allí te notificaremos cuando salgan a la venta nuevas fechas</div>
               </div>
-              <fieldset class="row mb-3">
-                <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-                <div class="col-sm-10">
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                    <label class="form-check-label" for="gridRadios1">
-                      First radio
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                    <label class="form-check-label" for="gridRadios2">
-                      Second radio
-                    </label>
-                  </div>
-                  <div class="form-check disabled">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-                    <label class="form-check-label" for="gridRadios3">
-                      Third disabled radio
-                    </label>
-                  </div>
-                </div>
-              </fieldset>
-              <div class="row mb-3">
-                <div class="col-sm-10 offset-sm-2">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck1">
-                    <label class="form-check-label" for="gridCheck1">
-                      Example checkbox
-                    </label>
-                  </div>
-                </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Quiero recibir notificaciones</label>
               </div>
-              <button type="submit" class="btn btn-primary">Sign in</button>
+              <button type="submit" class="btn btn-primary">Submit</button>
             </form>
-          </div>
         </div>
 
         <!-- FORM VIEJO DE RESPALDO -->
