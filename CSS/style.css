@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,800&family=Poppins:wght@700&display=swap");
-* { /* RESET */
+/* RESET */
+* {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -9,7 +10,9 @@
   font-family: "Poppins", sans-serif;
 }
 
-.nav-link { /* NAV */
+/* ---------------------------------------------------- */
+/* NAV */
+.nav-link {
   position: relative;
 }
 
@@ -39,13 +42,14 @@
 }
 
 /* FIN NAV */
+/* ---------------------------------------------------- */
 /* FOOTER */
 footer {
   width: 100%;
   /*     position: absolute; */
   bottom: 0;
   left: 0;
-  padding: 2rem 8%;
+  padding: 1rem 8%;
   background-color: #973838;
   display: flex;
   justify-content: center;
@@ -78,6 +82,7 @@ footer .redes-sociales a {
 
 .redes-sociales .fa-brands {
   font-size: 30px;
+  margin-top: 10px;
   line-height: 50px;
   position: relative;
   z-index: 0;
@@ -126,6 +131,8 @@ footer .redes-sociales a {
   text-align: center;
 }
 
+/* FIN FOOTER */
+/* ---------------------------------------------------- */
 /* INDEX */
 .body_index {
   display: flex;
@@ -206,7 +213,9 @@ button:active {
 }
 
 /* FIN INDEX */
-.body_historia { /* HISTORIA */
+/* ---------------------------------------------------- */
+/* HISTORIA */
+.body_historia {
   display: flex;
   flex-direction: column;
   background-color: rgb(26, 24, 24);
@@ -322,7 +331,9 @@ button:active {
 }
 
 /* FIN HISTORIA */
-.body_discografia { /* DISCOGRAFIA */
+/* ---------------------------------------------------- */
+/* DISCOGRAFIA */
+.body_discografia {
   display: flex;
   flex-direction: column;
   background-color: rgb(26, 24, 24);
@@ -365,7 +376,9 @@ button:active {
 }
 
 /* FIN DISCOGRAFIA */
-.body_galeria { /* GALERIA */
+/* ---------------------------------------------------- */
+/* GALERIA */
+.body_galeria {
   display: flex;
   flex-direction: column;
   background-color: rgb(26, 24, 24);
@@ -373,13 +386,119 @@ button:active {
   position: relative;
 }
 
+.main_galeria {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.main_galeria h1 {
+  font-size: 4rem;
+  margin-bottom: 50px;
+}
+
+.galeria-horizontal {
+  min-height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
+  gap: 30px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  outline: 10px solid #000;
+}
+
+.galeria-vertical {
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  width: 600px;
+  height: 430px;
+}
+.galeria-vertical img {
+  width: 30%;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 8;
+  transition: 0.5s ease;
+  border-radius: 10px;
+  outline: 3px solid #000;
+}
+
+.galeria-vertical img:hover {
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
 /* FIN GALERIA */
-.body_conciertos { /* CONCIERTOS */
+/* CONCIERTOS */
+.body_conciertos {
   display: flex;
   flex-direction: column;
   background-color: rgb(26, 24, 24);
   color: #ccc;
   position: relative;
+}
+.body_conciertos .main-conciertos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.body_conciertos .main-conciertos .titulos-conciertos {
+  text-align: center;
+}
+.body_conciertos .main-conciertos .titulos-conciertos h1 {
+  font-size: 4rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.body_conciertos .main-conciertos .titulos-conciertos h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.media-conciertos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.media-conciertos img {
+  width: 90%;
+  height: 650px;
+  margin-bottom: 100px;
+  border-radius: 10px;
+  border: #000;
+}
+
+.media-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+.media-form .video-form video {
+  width: 100%;
+  border-radius: 20px;
+}
+.media-form form {
+  margin: 50px;
+  margin-bottom: 0;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background-color: rgba(151, 56, 56, 0.6039215686);
+  border-radius: 20px;
+  height: 380px;
 }
 
 /* FIN CONCIERTOS */
@@ -394,6 +513,12 @@ button:active {
   }
   .imagen {
     width: 48%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .galeria-vertical {
+    flex-direction: column;
+    height: auto;
   }
 }
 @media (max-width: 768px) {

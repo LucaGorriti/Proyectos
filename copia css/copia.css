@@ -227,6 +227,15 @@ transform: scale(1.2);
     margin-top: 100px;
 }
 
+.galeria-vertical{
+  display: flex;
+     width: 600px;
+    height: 430px
+    
+}
+
+
+
 /* FIN GALERIA */
 
 /* CONCIERTOS */

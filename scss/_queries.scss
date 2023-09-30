@@ -14,11 +14,19 @@
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    .galeria-vertical {
+      flex-direction: column; 
+      height: auto;
+    }
+  }
+
+  @media (max-width: 768px) {
     .disco {
         width: 100%;
     }
 }
+
 
 @media (min-width: 720px){
     
