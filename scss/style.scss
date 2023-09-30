@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,800&family=Poppins:wght@700&display=swap');
 $bg-principal:#973838;
 
-/* RESET */
-*{
+
+*{                                                      /* RESET */
     margin: 0;
     padding: 0;
     list-style: none;
@@ -13,9 +13,7 @@ $bg-principal:#973838;
 }
 
 
-/* NAV */
-
-.nav-link{
+.nav-link{                                              /* NAV */
     position: relative;
 }
 
@@ -52,13 +50,108 @@ $bg-principal:#973838;
 
 /* FIN NAV */
 
+/* FOOTER */
+
+footer{
+    width: 100%;
+/*     position: absolute; */
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: $bg-principal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    p{
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    .redes-sociales, .footer-menu-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+    }
+
+    .redes-sociales{
+        a{
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            text-decoration: none;
+            color: #000;
+            box-shadow: 0 0 20px 10px rgba(0,0,0,0.25);
+            margin: 0 30px;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            
+        }
+        
+    }
+    
+}
+.redes-sociales .fa-brands{
+    font-size: 30px;
+    line-height: 50px;
+    position: relative;
+    z-index: 0;
+    transition: color 0.5s;
+}
+.redes-sociales a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -80px;
+    left: 0;
+    background: linear-gradient(-45deg, #ed1c94, #ffec17);
+    position: absolute;
+    transition: 0.5s;
+    opacity: 0.35;
+    z-index: 1;
+}
+
+.redes-sociales a:hover::after{
+    top: 0;
+    
+}
+
+.redes-sociales .fa-brands:hover{
+    color: #fff;
+}
+
+.footer-menu-container{
+    list-style-type: none;
+    color: #f2f2f2;
+    font-size: 18px;
+
+    .menu-item{
+        margin: 1rem 1.5rem;
+        cursor: pointer;
+        opacity: 0.6;
+    }
+}
+
+.menu-item:hover{
+    opacity: 1;
+}
+.copyright{
+    color: #f2f2f2;
+    opacity: 0.3;
+    text-align: center;
+}
 /* INDEX */
 
-.body_index{
+.body_index{                                   
     display: flex;
     flex-direction: column;
     background-color:rgb(26, 24, 24) ;
     color: #ccc;
+    position: relative;
 }
 
 .titulo_principal{
@@ -143,16 +236,14 @@ button:active{
     transform: scale(0.9) ;
 }
 
-
 /* FIN INDEX */
 
-/* HISTORIA */
-
-.body_historia{
+.body_historia{                                     /* HISTORIA */
     display: flex;
     flex-direction: column;
     background-color:rgb(26, 24, 24) ;
     color: #ccc;
+    position: relative;
 }
 
 .container_titles{
@@ -177,14 +268,15 @@ button:active{
     color: #ccc;
     margin: 20px 0;
     padding: 10px; 
-    background-color: rgba(0, 0, 0, 0.1);
-    text-align: center; 
-
-    .container img {
+    text-align: center;
+     img{
         max-width: 100%;
         height: auto;
+        border-radius: 6px;
+    
+    
+        
     }
-
 }
 
 .titulo-integrantes{
@@ -211,13 +303,19 @@ button:active{
         margin-bottom: 5px;
         box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
         
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 3px;
+        }
     }
     
-    .imagen img{
+    /* .imagen img{
         width: 100%;
         height: 100%;
         object-fit: cover;
-    }
+    } */
 
     .nombre{
         position: absolute;
@@ -230,19 +328,25 @@ button:active{
 
 }
 
-#bandas-relacionadas{
-    background-color: rgb(81, 151, 23);
+
+
+/* CARDS */
+
+#bandas-relacionadas{                            
+    background-color: rgb(26, 24, 24);
     text-align: center;
+    margin-bottom: 50px;
 
     .container{
         padding: 100px 0px;
+        
+        h3{
+            margin-top: 0;
+            font-size: 4em;
+        }
+        
     }
-
-    h3{
-        margin-top: 0;
-        font-size: 3em;
-    }
-
+    
     p{
         display: none;
     }
@@ -250,12 +354,15 @@ button:active{
     
 }
 
-.carta{
-    background-position: center;
-    background-size: cover;
-    padding: 50px;
-    margin: 20px;
-    border-radius: 15px;
+#bandas-relacionadas{
+
+    .carta{
+        background-position: center center;
+        background-size: cover;
+        padding: 50px;
+        margin: 20px;
+        border-radius: 15px;
+    }
 }
 
 .carta:first-child{
@@ -264,6 +371,7 @@ button:active{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ),url(../imagenes/the-strokes.jpg);
+    
 }
 .carta:nth-child(2){
     background-image: linear-gradient(
@@ -281,35 +389,17 @@ button:active{
     ),url(../imagenes/usted-senalemelo.jpg);
 }
 
-#bandas-relacionadas{
-
-    .bandas{
-        display: flex;
-        justify-content: center;
-    }
-
-    p{
-        display: block;
-        margin-bottom: 30px;
-    }
-
-    .carta{
-        padding: 50px;
-    }
-
-}
-
 
 /* FIN HISTORIA */
 
 
-/* DISCOGRAFIA */
 
-.body_discografia{
+.body_discografia{                              /* DISCOGRAFIA */
     display: flex;
     flex-direction: column;
     background-color:rgb(26, 24, 24) ;
     color: #ccc;
+    position: relative;
 }
 
 .texto_titulo {
@@ -359,23 +449,23 @@ button:active{
 /* FIN DISCOGRAFIA */
 
 
-/* GALERIA */
-.body_galeria{
+.body_galeria{                                      /* GALERIA */
     display: flex;
     flex-direction: column;
     background-color:rgb(26, 24, 24) ;
     color: #ccc;
+    position: relative;
 }
 
 /* FIN GALERIA */
  
-/* CONCIERTOS */
 
-.body_conciertos{
+.body_conciertos{                                   /* CONCIERTOS */
     display: flex;
     flex-direction: column;
     background-color:rgb(26, 24, 24) ;
     color: #ccc;
+    position: relative;
 }
 /* FIN CONCIERTOS */
   
