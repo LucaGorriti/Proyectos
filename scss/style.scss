@@ -272,9 +272,6 @@ button:active{
 .wrapper-historia{
     margin: 120px auto;
     width: 70%;
-    background-color: #161515de;
-    padding: 40px;
-    border-radius: 30px;
 
     .imagen-historia{
         img{
@@ -288,6 +285,7 @@ button:active{
 
     .textos{
         color:#fff;
+        
 
         h2{
             font-size: 50px;
@@ -296,6 +294,12 @@ button:active{
         p{
             font-size: 16px;  
             text-align: left; 
+            max-height: none;
+            overflow-y: visible;
+            
+            em{
+                color: $bg-principal;
+            }
         }
     }
 }

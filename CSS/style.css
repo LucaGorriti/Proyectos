@@ -240,9 +240,6 @@ button:active {
 .wrapper-historia {
   margin: 120px auto;
   width: 70%;
-  background-color: rgba(22, 21, 21, 0.8705882353);
-  padding: 40px;
-  border-radius: 30px;
 }
 .wrapper-historia .imagen-historia img {
   max-width: 500px;
@@ -260,6 +257,11 @@ button:active {
 .wrapper-historia .textos p {
   font-size: 16px;
   text-align: left;
+  max-height: none;
+  overflow-y: visible;
+}
+.wrapper-historia .textos p em {
+  color: #973838;
 }
 
 .titulo-integrantes {
@@ -604,6 +606,12 @@ button:active {
   .wrapper-historia .imagen-historia img {
     max-width: 100%;
     margin-right: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper-historia .textos-historia .textos p {
+    max-height: 300px;
+    overflow-y: auto;
   }
 }
 
