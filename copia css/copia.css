@@ -1,0 +1,252 @@
+/* FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,800&family=Poppins:wght@700&display=swap');
+
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.copyright{
+    color: aqua;
+}
+
+/* NAV */
+
+.nav-link{
+    position: relative;
+}
+
+
+.nav-link::after{
+    content:"";
+    transition: all 0.2s;
+    opacity: 0;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(5, 7, 0);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.nav-link:hover::after{
+    opacity: 1;
+}
+
+
+.container-fluid img{
+    transition: all 0.3s;
+}
+
+.container-fluid img:hover{
+transform: scale(1.2);
+}
+
+/* FIN NAV */
+
+/* INDEX */
+
+.body_index{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(26, 24, 24) ;
+    color: #ccc;
+}
+.media .video_inicio{
+    height: 100%;
+    margin: 10px;
+    text-align: center;
+}
+
+.luna{
+    background-color: rgba(218, 252, 29, 0.295);
+    position: absolute;
+    top: 90%;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+.index_main{
+    margin-top: 100px;
+}
+
+/* FIN INDEX */
+
+/* HISTORIA */
+.body_historia{
+    background-color: rgb(26, 24, 24) ;
+}
+
+.container_titles{
+    margin-top: 50px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+
+.container_titles .imagenes_audios h1{
+    font-size: 20px;
+    text-align: center;
+}
+
+.container_titles .imagenes_audios p{
+    font-size: 15;
+    text-align: center;
+}
+
+.gallery{
+    min-height: 100vh;
+    width: 90%;
+    position: relative;
+    outline: 6px solid black;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.container {
+    color: #ccc;
+    margin: 20px 0;
+    padding: 10px; 
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center; 
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.gallery-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-img p{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 790px) {
+    .gallery {
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* FIN HISTORIA */
+
+/* DISCOGRAFIA */
+.body_discos{
+    background-color: rgb(17, 16, 16);
+}
+
+
+
+.discos_padre {
+    /* background-color: aqua; */
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: space-between; */
+
+}
+
+
+.h1{
+    font-size: 40px;
+    margin-top: 100px;
+    text-align: center;
+    
+}
+
+.texto_titulo{
+    color: #ccc;
+}
+
+
+.texto_titulo p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.texto_titulo p{
+    text-align: center;
+}
+
+.disco {
+    width: 48%;
+    height: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.disco img {
+    max-width: 75%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .disco {
+        width: 100%;
+    }
+}
+
+
+/* FIN DISCOGRAFIA */
+
+/* GALERIA */
+.body_galeria{
+    background-color: rgb(26, 24, 24) ;
+    color: #ccc;
+}
+
+.main_galeria{
+    margin-top: 100px;
+}
+
+.galeria-vertical{
+  display: flex;
+     width: 600px;
+    height: 430px
+    
+}
+
+
+
+/* FIN GALERIA */
+
+/* CONCIERTOS */
+.body_conciertos{
+    background-color: rgb(26, 24, 24) ;
+    color: #ccc;
+}
+
+.main_conciertos{
+    margin-top: 50px;
+}
+
+/* FIN CONCIERTOS */
+
